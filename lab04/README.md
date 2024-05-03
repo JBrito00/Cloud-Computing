@@ -7,16 +7,26 @@ Consider the attached CSV file (OcupacaoEspacosPublicos.csv) with data extracted
 
 ## Assignment
 Add the following functionalities to the application:
+
 a. Display the content of a document based on its identifier (e.g., Lab4-2017).
+
 b. Delete a field from a document, given its identifier and the name of the field to be deleted.
+
 c. Perform a simple query to retrieve all documents from a specific parish.
+
 d. Perform a compound query to retrieve documents with the following criteria:
+
     - With the ID field greater than a value
+
     - From a specific parish
+
     - Of a specific event type
+
 e. Perform a query to retrieve documents with events that started in the month of February 2017 (start date (dtInicio) greater than 31/01/2017 and less than 01/03/2017).
+
 f. Perform a query to retrieve documents with events that were fully completed in the month of February 2017 (start date (dtInicio) greater than 31/01/2017 and end date (dtFinal) less than 01/03/2017).
 
 ## Resources
-Google Firestore Java API Documentation: [link](https://firebase.google.com/docs/firestore/quickstart)
-Java Documentation: [link](https://docs.oracle.com/en/java/)
+[Google Firestore Java API Documentation](https://firebase.google.com/docs/firestore/quickstart)
+
+[Java Documentation](https://docs.oracle.com/en/java/)
