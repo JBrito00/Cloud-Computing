@@ -3,10 +3,11 @@
 ## Objective
 Use the Java API to access the Google Firestore service.
 Consider the attached CSV file (OcupacaoEspacosPublicos.csv) with data extracted from a real case (temporary occupation of spaces for events in the city of Lisbon).
-1. Using the Java Firestore API, create a Java application that creates a collection of documents (one document for each line of the CSV file) in the Firestore database, filling it with the data from the attached file. Consider that the data of each line is represented in the following class structure represented in the figure. Consider that each document is assigned an identifier "Lab4-" + ID, where ID is the integer number that identifies a temporary occupation.
 
 ## Assignment
-Add the following functionalities to the application:
+1. Using the Java Firestore API, create a Java application that creates a collection of documents (one document for each line of the CSV file) in the Firestore database, filling it with the data from the attached file. Consider that the data of each line is represented in the following class structure represented in the figure. Consider that each document is assigned an identifier "Lab4-" + ID, where ID is the integer number that identifies a temporary occupation.
+
+2. Add the following functionalities to the application:
 
 a. Display the content of a document based on its identifier (e.g., Lab4-2017).
 
