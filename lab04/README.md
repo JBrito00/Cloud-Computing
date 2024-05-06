@@ -27,6 +27,9 @@ e. Perform a query to retrieve documents with events that started in the month o
 
 f. Perform a query to retrieve documents with events that were fully completed in the month of February 2017 (start date (dtInicio) greater than 31/01/2017 and end date (dtFinal) less than 01/03/2017).
 
+## Considerations
+Json file with google service account not in the repo for security reasons. The program won't run wihtout a valid google service account credentials. 
+
 ## Resources
 [Google Firestore Java API Documentation](https://firebase.google.com/docs/firestore/quickstart)
 
