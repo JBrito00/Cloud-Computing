@@ -69,6 +69,6 @@ The system architecture, as shown in Figure 1, consists of several key component
 2. **Submit Image**: Use the client to submit an image file for processing.
 3. **Query Results**: Retrieve processing results using the request identifier.
 
-### Acknowledgments
+## Acknowledgments
 
 This project was a collaborative effort completed during the summer semester of 2024, with contributions from two colleagues. It was based on the foundational code and guidance provided by our professors for the Cloud Computing course.
