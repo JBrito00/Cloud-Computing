@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "servicesf";
+
+package sfservice;
+
+service ServiceSF{
+  // Submit an image
+  rpc submitImage(stream ImageSubmissionRequest) returns (ImageSubmissionResponse);
+
+  // Get details and translations of image
+  rpc getImageDetails(ImageDetailsRequest) returns (ImageDetailsResponse);
+
+  // Get all files with certain dates and a characteristic
+  rpc getAllFiles(AllFilesWithRequest) returns (stream AllFilesWithResponse);
+}
+
+message ImageSubmissionRequest{
+  bytes image_chunk = 1;
+}
+
+message ImageSubmissionResponse{
+  string unique_id = 1;
+}
+
+message ImageDetailsRequest{
+  string unique_id = 1;
+}
+
+message ImageDetailsResponse{
+  repeated string characteristics = 1;
+  repeated string translations = 2;
+  string processed_date = 3;
+}
+
+message AllFilesWithRequest{
+  string start_date = 1;
+  string end_date = 2;
+  string characteristic = 3;
+}
+
+message AllFilesWithResponse{
+  repeated string file_names = 1;
+}

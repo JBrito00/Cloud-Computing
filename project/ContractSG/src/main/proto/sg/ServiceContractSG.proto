@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "servicesg";
+
+package sgservice;
+
+service ServiceSG{
+  // Scale server instances
+  rpc scaleServerInstances(ScaleServerInstancesRequest) returns (ScaleServerInstancesResponse);
+
+  // Scale image processors instances
+  rpc scaleImageProcessorsInstances(ScaleImageProcessorRequest) returns (ScaleImageProcessorResponse);
+}
+
+message ScaleServerInstancesRequest{
+  int32 num_instances = 1;
+}
+
+message ScaleServerInstancesResponse{
+  string message = 1;
+}
+
+message ScaleImageProcessorRequest{
+  int32 num_instances = 1;
+}
+
+message ScaleImageProcessorResponse{
+  string message = 1;
+}
